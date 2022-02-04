@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 81%);
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+    color: white;
+}
+
+@media(max-width:1200px){
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.first{
+    grid-column: span 2;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 15px; 
+}
+
+.first{
+   background-image: url('images/bg-pattern-quotation.svg');
+   background-position:top right;
+
+   background-repeat: no-repeat;
+}
+
+.first img{
+    border: 2px solid hsla(263, 44%, 71%, 0.74);
+}
+
+.second{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 15px;
+}
+
+.third{
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+}
+
+.fourth{
+    grid-column: span 2;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 15px;
+}
+
+.fourth img{
+    border: solid 2px hsl(263, 55%, 52%);
+}
+
+.fifth{
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+}
+
+.person{
+    padding: 1.3rem;
+}
+
+
+
+.face{
+    display: flex;
+    align-items: center;
+}
+
+.face img{
+    width: 3rem;
+    border-radius: 50%;
+}
+.face1{
+    border: 5px solid hsl(263, 55%, 52%);
+}
+
+.name h3{
+    font-size: 1rem;
+    margin: 0 10px;
+    padding: 0;
+
+}
+
+.name p{
+    font-size: .8rem;
+    margin: 0 10px;
+    opacity: 70%;
+}
+
+.title{
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.description{
+    font-size: 1rem;
+    opacity: 70%;
+}
